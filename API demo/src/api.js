@@ -15,7 +15,7 @@ app.use(cors({ origin: '*'}));
 
 // ? connect db server
 mongoose.connect(
-    DatabaseURL, //* Database url here
+    mongodb+srv://mungus58:<db_password>@cluster0.lcdsaug.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0, //* Database url here
     { useNewUrlParser: true, useUnifiedTopology: true },
     function (err, res) {
         if (err) {
